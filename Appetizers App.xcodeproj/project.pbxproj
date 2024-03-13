@@ -18,6 +18,7 @@
 		AA9B6EA62BA1DEE2003240C5 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EA52BA1DEE2003240C5 /* AppetizerListCell.swift */; };
 		AA9B6EA92BA1E0D5003240C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EA82BA1E0D5003240C5 /* NetworkManager.swift */; };
 		AA9B6EAC2BA1E20A003240C5 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EAB2BA1E20A003240C5 /* APError.swift */; };
+		AA9B6EAF2BA1EF80003240C5 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AA9B6EA52BA1DEE2003240C5 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		AA9B6EA82BA1E0D5003240C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA9B6EAB2BA1E20A003240C5 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,8 @@
 			children = (
 				AA9B6EA02BA1CB4D003240C5 /* Support */,
 				AA9B6EA72BA1E0C9003240C5 /* Manager */,
-				AA9B6EA42BA1DED6003240C5 /* View */,
 				AA9B6EA12BA1D3B1003240C5 /* Model */,
+				AA9B6EA42BA1DED6003240C5 /* View */,
 				AA9B6E9F2BA1CB36003240C5 /* Screen */,
 				AA9B6EAA2BA1E200003240C5 /* Utilz */,
 				AA9B6E912BA1C1DE003240C5 /* Preview Content */,
@@ -87,8 +89,8 @@
 		AA9B6E9F2BA1CB36003240C5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				AA9B6EAD2BA1EF68003240C5 /* AppetizerList */,
 				AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */,
-				AA9B6E992BA1C47C003240C5 /* AppetizerListView.swift */,
 				AA9B6E9B2BA1C486003240C5 /* AccountView.swift */,
 				AA9B6E9D2BA1C48F003240C5 /* OrderView.swift */,
 			);
@@ -134,6 +136,15 @@
 				AA9B6EAB2BA1E20A003240C5 /* APError.swift */,
 			);
 			path = Utilz;
+			sourceTree = "<group>";
+		};
+		AA9B6EAD2BA1EF68003240C5 /* AppetizerList */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B6E992BA1C47C003240C5 /* AppetizerListView.swift */,
+				AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */,
+			);
+			path = AppetizerList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				AA9B6EA32BA1D5D5003240C5 /* Appetizer.swift in Sources */,
 				AA9B6EAC2BA1E20A003240C5 /* APError.swift in Sources */,
 				AA9B6EA62BA1DEE2003240C5 /* AppetizerListCell.swift in Sources */,
+				AA9B6EAF2BA1EF80003240C5 /* AppetizerListViewModel.swift in Sources */,
 				AA9B6E9C2BA1C486003240C5 /* AccountView.swift in Sources */,
 				AA9B6E8E2BA1C1DB003240C5 /* AppetizerTabView.swift in Sources */,
 				AA9B6EA92BA1E0D5003240C5 /* NetworkManager.swift in Sources */,
