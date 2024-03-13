@@ -11,14 +11,13 @@ struct AppetizerListView: View {
     var body: some View {
         NavigationStack {
             List(MockData.appetizers) { appetizer in
-                Text(appetizer.name)
+                AppetizerListCell(appetizer: appetizer)
             }
             .listStyle(.grouped)
             .navigationTitle("🍟 Appetizers")
         }
     }
 }
-
 
 #Preview {
     AppetizerListView()
