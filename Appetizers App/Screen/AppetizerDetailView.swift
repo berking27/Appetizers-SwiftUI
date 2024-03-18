@@ -17,7 +17,7 @@ struct AppetizerDetailView: View {
             AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .scaledToFit()
                 .frame(width: 300, height: 225)
-              
+            
             VStack(spacing: 12) {
                 Text(appetizer.name)
                     .font(.title)
@@ -28,11 +28,11 @@ struct AppetizerDetailView: View {
                     .padding()
                 
                 HStack(spacing: 32) {
-                    FoodDetailView(title: "Calories", value: appetizer.calories)
+                    NutritionInfoView(title: "Calories", value: appetizer.calories)
                     
-                    FoodDetailView(title: "Carbs", value: appetizer.carbs)
+                    NutritionInfoView(title: "Carbs", value: appetizer.carbs)
                     
-                    FoodDetailView(title: "Protein", value: appetizer.protein)
+                    NutritionInfoView(title: "Protein", value: appetizer.protein)
                     
                 }
             }
@@ -42,18 +42,10 @@ struct AppetizerDetailView: View {
             Button {
                 print("Button Tapped")
             } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") -Add to Order")
-                .font(.title3)
-                .fontWeight(.semibold)
-                .frame(width: 240, height: 48)
-                .background(.brandPrimary.gradient)
-                .foregroundStyle(.white)
-                .clipShape(RoundedRectangle(cornerRadius: 12))
+                APButton(text: "$\(appetizer.price, specifier: "%.2f") -Add to Order")
             }
             .padding(.bottom, 32)
             
-            
-                
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
@@ -62,17 +54,7 @@ struct AppetizerDetailView: View {
         .overlay(Button {
             isShowingDetail = false
         } label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(.white)
-                    .opacity(0.6)
-                
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                    .foregroundStyle(.black)
-            }
+            XDismissButton()
         }, alignment: .topTrailing)
     }
 }
@@ -82,8 +64,9 @@ struct AppetizerDetailView: View {
                         isShowingDetail: .constant(true))
 }
 
+//MARK: - Extracted Views
 
-struct FoodDetailView: View {
+struct NutritionInfoView: View {
     var title: String
     var value: Int
     
@@ -93,9 +76,15 @@ struct FoodDetailView: View {
                 .font(.caption)
                 .bold()
             
-            Text("\(value)")
-                .foregroundStyle(.secondary)
-                .fontWeight(.semibold)
+            if title == "Calories" {
+                Text("\(value)")
+                    .foregroundStyle(.secondary)
+                    .fontWeight(.semibold)
+            } else {
+                Text("\(value) g")
+                    .foregroundStyle(.secondary)
+                    .fontWeight(.semibold)
+            }
         }
         .bold()
     }
