@@ -21,6 +21,7 @@
 		AA9B6EAF2BA1EF80003240C5 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */; };
 		AACC56172BA4736F001DB189 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC56162BA4736F001DB189 /* Alert.swift */; };
 		AACC56192BA48DD7001DB189 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC56182BA48DD7001DB189 /* LoadingView.swift */; };
+		AACC561B2BA85074001DB189 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC561A2BA85074001DB189 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		AACC56162BA4736F001DB189 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AACC56182BA48DD7001DB189 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AACC561A2BA85074001DB189 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				AA9B6EA02BA1CB4D003240C5 /* Support */,
-				AA9B6EA72BA1E0C9003240C5 /* Manager */,
 				AA9B6EA12BA1D3B1003240C5 /* Model */,
 				AA9B6EA42BA1DED6003240C5 /* View */,
 				AA9B6E9F2BA1CB36003240C5 /* Screen */,
+				AA9B6EA72BA1E0C9003240C5 /* Manager */,
 				AA9B6EAA2BA1E200003240C5 /* Utilz */,
+				AA9BFBDB2BA8579100EC309A /* Extensions */,
 				AA9B6E912BA1C1DE003240C5 /* Preview Content */,
 			);
 			path = "Appetizers App";
@@ -93,10 +96,10 @@
 		AA9B6E9F2BA1CB36003240C5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				AA9B6EAD2BA1EF68003240C5 /* AppetizerList */,
 				AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */,
-				AA9B6E9B2BA1C486003240C5 /* AccountView.swift */,
-				AA9B6E9D2BA1C48F003240C5 /* OrderView.swift */,
+				AA9B6EAD2BA1EF68003240C5 /* AppetizerListView */,
+				AA9BFBD52BA856B900EC309A /* OrderView */,
+				AA9BFBD62BA856D700EC309A /* AccountView */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -121,8 +124,9 @@
 		AA9B6EA42BA1DED6003240C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA9B6EA52BA1DEE2003240C5 /* AppetizerListCell.swift */,
-				AACC56182BA48DD7001DB189 /* LoadingView.swift */,
+				AA9BFBD92BA8576100EC309A /* Image */,
+				AA9BFBD82BA8575A00EC309A /* Cells */,
+				AA9BFBD72BA8574D00EC309A /* UIKitComponents */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,13 +148,60 @@
 			path = Utilz;
 			sourceTree = "<group>";
 		};
-		AA9B6EAD2BA1EF68003240C5 /* AppetizerList */ = {
+		AA9B6EAD2BA1EF68003240C5 /* AppetizerListView */ = {
 			isa = PBXGroup;
 			children = (
 				AA9B6E992BA1C47C003240C5 /* AppetizerListView.swift */,
 				AA9B6EAE2BA1EF80003240C5 /* AppetizerListViewModel.swift */,
 			);
-			path = AppetizerList;
+			path = AppetizerListView;
+			sourceTree = "<group>";
+		};
+		AA9BFBD52BA856B900EC309A /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B6E9D2BA1C48F003240C5 /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		AA9BFBD62BA856D700EC309A /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B6E9B2BA1C486003240C5 /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		AA9BFBD72BA8574D00EC309A /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AACC56182BA48DD7001DB189 /* LoadingView.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		AA9BFBD82BA8575A00EC309A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B6EA52BA1DEE2003240C5 /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA9BFBD92BA8576100EC309A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AACC561A2BA85074001DB189 /* RemoteImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		AA9BFBDB2BA8579100EC309A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +280,7 @@
 				AA9B6EAF2BA1EF80003240C5 /* AppetizerListViewModel.swift in Sources */,
 				AA9B6E9C2BA1C486003240C5 /* AccountView.swift in Sources */,
 				AACC56192BA48DD7001DB189 /* LoadingView.swift in Sources */,
+				AACC561B2BA85074001DB189 /* RemoteImage.swift in Sources */,
 				AA9B6E8E2BA1C1DB003240C5 /* AppetizerTabView.swift in Sources */,
 				AA9B6EA92BA1E0D5003240C5 /* NetworkManager.swift in Sources */,
 				AA9B6E8C2BA1C1DB003240C5 /* Appetizers_AppApp.swift in Sources */,
