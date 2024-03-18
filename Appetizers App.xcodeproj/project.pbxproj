@@ -104,8 +104,8 @@
 			children = (
 				AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */,
 				AA9B6EAD2BA1EF68003240C5 /* AppetizerListView */,
-				AA9BFBD52BA856B900EC309A /* OrderView */,
 				AA9BFBD62BA856D700EC309A /* AccountView */,
+				AA9BFBD52BA856B900EC309A /* OrderView */,
 				AA9BFBDC2BA8595600EC309A /* AppetizerDetailView.swift */,
 			);
 			path = Screen;
