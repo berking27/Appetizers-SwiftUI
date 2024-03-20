@@ -28,6 +28,7 @@
 		AADD43AE2BA99E27005CA3E3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43AD2BA99E27005CA3E3 /* AccountViewModel.swift */; };
 		AADD43B32BA99FF3005CA3E3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */; };
 		AADD43B52BA9B3BC005CA3E3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43B42BA9B3BC005CA3E3 /* User.swift */; };
+		AADD43B82BAACD92005CA3E3 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43B72BAACD92005CA3E3 /* EmptyState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		AADD43AD2BA99E27005CA3E3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		AADD43B42BA9B3BC005CA3E3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AADD43B72BAACD92005CA3E3 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		AA9B6EA42BA1DED6003240C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AADD43B62BAACD79005CA3E3 /* Empty States */,
 				AA9BFBDE2BA8794B00EC309A /* Buttons */,
 				AA9BFBD92BA8576100EC309A /* Image */,
 				AA9BFBD82BA8575A00EC309A /* Cells */,
@@ -230,6 +233,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		AADD43B62BAACD79005CA3E3 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				AADD43B72BAACD92005CA3E3 /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,6 +327,7 @@
 				AACC56172BA4736F001DB189 /* Alert.swift in Sources */,
 				AA9B6E9A2BA1C47C003240C5 /* AppetizerListView.swift in Sources */,
 				AA9B6E9E2BA1C48F003240C5 /* OrderView.swift in Sources */,
+				AADD43B82BAACD92005CA3E3 /* EmptyState.swift in Sources */,
 				AADD43AE2BA99E27005CA3E3 /* AccountViewModel.swift in Sources */,
 				AA9BFBE22BA87A9D00EC309A /* XDismissButton.swift in Sources */,
 				AADD43B52BA9B3BC005CA3E3 /* User.swift in Sources */,
