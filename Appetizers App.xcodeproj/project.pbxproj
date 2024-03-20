@@ -25,6 +25,9 @@
 		AACC56172BA4736F001DB189 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC56162BA4736F001DB189 /* Alert.swift */; };
 		AACC56192BA48DD7001DB189 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC56182BA48DD7001DB189 /* LoadingView.swift */; };
 		AACC561B2BA85074001DB189 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC561A2BA85074001DB189 /* RemoteImage.swift */; };
+		AADD43AE2BA99E27005CA3E3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43AD2BA99E27005CA3E3 /* AccountViewModel.swift */; };
+		AADD43B32BA99FF3005CA3E3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */; };
+		AADD43B52BA9B3BC005CA3E3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD43B42BA9B3BC005CA3E3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		AACC56162BA4736F001DB189 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AACC56182BA48DD7001DB189 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AACC561A2BA85074001DB189 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		AADD43AD2BA99E27005CA3E3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		AADD43B42BA9B3BC005CA3E3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +110,8 @@
 			children = (
 				AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */,
 				AA9B6EAD2BA1EF68003240C5 /* AppetizerListView */,
-				AA9BFBD52BA856B900EC309A /* OrderView */,
 				AA9BFBD62BA856D700EC309A /* AccountView */,
+				AA9BFBD52BA856B900EC309A /* OrderView */,
 				AA9BFBDC2BA8595600EC309A /* AppetizerDetailView.swift */,
 			);
 			path = Screen;
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				AA9B6EA22BA1D5D5003240C5 /* Appetizer.swift */,
+				AADD43B42BA9B3BC005CA3E3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				AA9B6E9B2BA1C486003240C5 /* AccountView.swift */,
+				AADD43AD2BA99E27005CA3E3 /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 		AA9BFBDB2BA8579100EC309A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADD43B32BA99FF3005CA3E3 /* String+Ext.swift in Sources */,
 				AA9B6EA32BA1D5D5003240C5 /* Appetizer.swift in Sources */,
 				AA9BFBE02BA8795700EC309A /* APButton.swift in Sources */,
 				AA9B6EAC2BA1E20A003240C5 /* APError.swift in Sources */,
@@ -306,7 +316,9 @@
 				AACC56172BA4736F001DB189 /* Alert.swift in Sources */,
 				AA9B6E9A2BA1C47C003240C5 /* AppetizerListView.swift in Sources */,
 				AA9B6E9E2BA1C48F003240C5 /* OrderView.swift in Sources */,
+				AADD43AE2BA99E27005CA3E3 /* AccountViewModel.swift in Sources */,
 				AA9BFBE22BA87A9D00EC309A /* XDismissButton.swift in Sources */,
+				AADD43B52BA9B3BC005CA3E3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
