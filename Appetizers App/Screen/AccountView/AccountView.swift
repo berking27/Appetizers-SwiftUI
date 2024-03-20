@@ -15,15 +15,15 @@ struct AccountView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("First Name", text: $viewModel.firstName)
-                    TextField("Last Name", text: $viewModel.lastName)
-                    TextField("Email", text: $viewModel.email)
+                    TextField("First Name", text: $viewModel.user.firstName)
+                    TextField("Last Name", text: $viewModel.user.lastName)
+                    TextField("Email", text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled()
                     
                     DatePicker("Birthday", 
-                               selection: $viewModel.birthDate,
+                               selection: $viewModel.user.birthDate,
                                displayedComponents: .date)
                     
                     Button {
@@ -32,18 +32,14 @@ struct AccountView: View {
                         Text("Save Changes")
                     }
                     
+                    
                 } header: {
                     Text("Personal Info")
                 }
                 
                 Section {
-                    Toggle(isOn: $viewModel.extraNapkins) {
-                        Text("Extra Napkins")
-                    }
-                    
-                    Toggle(isOn: $viewModel.frequentRefills) {
-                        Text("Frequent Refills")
-                    }
+                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
+                    Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
                     
                 } header: {
                     Text("Requests")
@@ -52,6 +48,9 @@ struct AccountView: View {
 
             }
             .navigationTitle("👤 Acount")
+        }
+        .onAppear {
+            viewModel.retrieveUser()
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
