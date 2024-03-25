@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA4019B62BB1BDB200E74B6C /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4019B52BB1BDB200E74B6C /* Image+Ext.swift */; };
+		AA4019B82BB1C77700E74B6C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4019B72BB1C77700E74B6C /* Date+Ext.swift */; };
 		AA9B6E8C2BA1C1DB003240C5 /* Appetizers_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6E8B2BA1C1DB003240C5 /* Appetizers_AppApp.swift */; };
 		AA9B6E8E2BA1C1DB003240C5 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */; };
 		AA9B6E902BA1C1DE003240C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9B6E8F2BA1C1DE003240C5 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		AA4019B52BB1BDB200E74B6C /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+		AA4019B72BB1C77700E74B6C /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		AA9B6E882BA1C1DB003240C5 /* Appetizers App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appetizers App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9B6E8B2BA1C1DB003240C5 /* Appetizers_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers_AppApp.swift; sourceTree = "<group>"; };
 		AA9B6E8D2BA1C1DB003240C5 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				AADD43B22BA99FF3005CA3E3 /* String+Ext.swift */,
 				AADD43BE2BAB2A54005CA3E3 /* View+Ext.swift */,
 				AA4019B52BB1BDB200E74B6C /* Image+Ext.swift */,
+				AA4019B72BB1C77700E74B6C /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				AADD43BA2BAAD5F2005CA3E3 /* Order.swift in Sources */,
 				AA9B6E9C2BA1C486003240C5 /* AccountView.swift in Sources */,
 				AACC56192BA48DD7001DB189 /* LoadingView.swift in Sources */,
+				AA4019B82BB1C77700E74B6C /* Date+Ext.swift in Sources */,
 				AADD43BD2BAB2905005CA3E3 /* CustomModifiers.swift in Sources */,
 				AACC561B2BA85074001DB189 /* RemoteImage.swift in Sources */,
 				AA9B6E8E2BA1C1DB003240C5 /* AppetizerTabView.swift in Sources */,
