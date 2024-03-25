@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func standardButtonStyle() -> some View{
+    func standardButtonStyle() -> some View {
         self.modifier(StandartButtonStyle())
     }
 }
