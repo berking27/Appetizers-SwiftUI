@@ -58,4 +58,11 @@ struct AlertContext {
     static let invalidUserData = AlertItem(title: Text("Invalid User Data"),
                                         message: Text("There was an issue retrieving data from memory"),
                                         dismissButton: .default(Text("OK")))
+    
+    //MARK: - Generic Error
+    
+    static let genericError = AlertItem(title: Text("Something Went Wrong"),
+                                        message: Text("We are unable to complete your request. Please try again later."),
+                                        dismissButton: .default(Text("OK")))
+    
 }
